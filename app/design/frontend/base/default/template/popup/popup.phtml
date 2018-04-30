@@ -1,0 +1,41 @@
+<?php
+if ($this->isActivePopUp()):
+?>
+<script type="text/javascript">
+    <?php if (is_numeric($this->getCookieLifeTime())): ?>
+    popup.setCookieLiveTime(<?php echo $this->getCookieLifeTime(); ?>);
+    <?php endif; ?>
+    <?php if ($this->getCookieName()): ?>
+    popup.setCookieName('<?php echo $this->getCookieName(); ?>');
+    <?php endif; ?>
+    popup.setBaseUrl('<?php echo $this->getBaseUrl(); ?>');
+    popup.setDelay('<?php echo $this->getPopupDelay(); ?>');
+
+</script>
+<div id="popup_background_layer">
+
+    <div id="popup_box_layer">
+        <div id="popup_box_close"></div>
+        <div id="popup_box_title">
+            <?php if ($this->getFirstTitle()): ?>
+            <div id="popup_box_block_1">
+               <?php echo $this->getFirstTitle() ?>
+            </div>
+            <?php endif; ?>
+            <?php if ($this->getSecondTitle()): ?>
+            <div id="popup_box_block_2">
+                <?php echo $this->getSecondTitle() ?>
+            </div>
+            <?php endif; ?>
+        </div>
+
+        <?php if ($this->getText()): ?>
+        <div class="popup_box_lines"></div>
+        <div id="popup_box_block_3">
+            <?php echo $this->getText() ?>
+        </div>
+        <?php endif; ?>
+    </div>
+
+</div>
+<?php endif; ?>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <popup translate="label" module="popup">
+            <label>Popup Extensions</label>
+            <sort_order>401</sort_order>
+        </popup>
+    </tabs>
+    <sections>
+        <popup translate="label" module="popup">
+            <label> Popup </label>
+            <tab>popup</tab>
+            <sort_order>99999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+
+                <general translate="label">
+                    <label>Popup settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <isactive translate="label">
+                            <label>Show Popup</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </isactive>
+                        <firsttitle translate="label">
+                            <label>Title row 1</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </firsttitle>
+                        <secondtitle translate="label">
+                            <label>Title row 2</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </secondtitle>
+                        <message translate="label">
+                            <label>Text</label>
+                            <frontend_type>Textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </message>
+                        <popupdelay translate="label">
+                            <label>Popup Delay (sec)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Delay to show popup (in sec)</comment>
+                        </popupdelay>
+                        <cookiename translate="label">
+                            <label>Cookie Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If you change this name, popup show again for all customers</comment>
+                        </cookiename>
+                        <cookielifetime translate="label">
+                            <label>Cookie Life Time (days)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>set 0 for lifetime</comment>
+                        </cookielifetime>
+                    </fields>
+                </general>
+
+
+            </groups>
+        </popup>
+    </sections>
+
+
+</config>

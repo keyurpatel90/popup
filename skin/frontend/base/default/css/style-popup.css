@@ -1,0 +1,69 @@
+#popup_background_layer {
+    position: absolute;
+    z-index: 9998;
+    background: url(../images/popup/dark2.png);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#popup_box_layer {
+    z-index: 9999;
+    background-color: #ffffff;
+    width: 470px;
+    height: auto;
+    overflow: hidden;
+    top: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    position:relative;
+}
+
+#popup_box_title {
+    width: 440px;
+    height: auto;
+    overflow: hidden;
+}
+
+#popup_box_block_1 {
+    width: 350px;
+    font: 20px/34px "CenturyGothicRegular",Century Gothic,Verdana,sans-serif;
+    text-align: left;
+}
+#popup_box_block_2 {
+    font: 29px/34px "CenturyGothicRegular",Century Gothic,Verdana,sans-serif;
+    height: auto;
+    text-align: left;
+    margin: 0  0 10px 0 ;
+    width: 350px;
+}
+#popup_box_block_3 {
+    text-align: justify;
+}
+
+#popup_box_close {
+    height: 22px;
+    width: 22px;
+    background: url(../images/popup/box_close.png) no-repeat;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 10px;
+}
+.popup_box_lines {
+    background: url("../images/popup/box_lines.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 1px;
+    width: 100%;
+    clear: both;
+    margin: 5px 0;
+ }
+
+
+

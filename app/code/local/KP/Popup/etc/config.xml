@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <KP_Popup>
+            <version>1.0.0</version>
+        </KP_Popup>
+    </modules>
+
+    <frontend>
+        <layout>
+            <updates>
+                <Popup>
+                    <file>popup.xml</file>
+                </Popup>
+            </updates>
+        </layout>
+
+        <translate>
+            <modules>
+                <KP_Popup>
+                    <files>
+                        <default>KP_Popup.csv</default>
+                    </files>
+                </KP_Popup>
+            </modules>
+        </translate>
+    </frontend>
+
+    <global>
+        <blocks>
+            <popup>
+                <class>KP_Popup_Block</class>
+            </popup>
+        </blocks>
+
+        <helpers>
+            <popup>
+                <class>KP_Popup_Helper</class>
+            </popup>
+        </helpers>
+
+    </global>
+
+    <default>
+        <popup>
+            <general>
+                <isactive>0</isactive>
+                <cookielifetime>999</cookielifetime>
+                <cookiename>popup</cookiename>
+                <popupdelay>3</popupdelay>
+                <firsttitle>This is first title.</firsttitle>
+                <secondtitle>This is second title!</secondtitle>
+                <message>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</message>
+            </general>
+        </popup>
+    </default>
+</config>
